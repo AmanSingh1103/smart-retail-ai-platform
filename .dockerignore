@@ -1,0 +1,15 @@
+.env
+.env.*
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+app.log
+*.log
+deploy.zip
+.git/
+.github/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
