@@ -1,0 +1,64 @@
+
+SMART RETAIL SALES MODEL REPORT
+
+Dataset:
+Total Rows: 12627
+Total Columns: 26
+
+Train/Test Split:
+Training Rows: 10101 (80.00%)
+Testing Rows: 2526 (20.00%)
+
+Regression Model:
+Model Used: ExtraTreesRegressor with log target transformation
+Training Accuracy / R2: 86.53%
+Testing Accuracy / R2: 83.94%
+Train MAE: 36.21
+Test MAE: 41.06
+Train RMSE: 73.92
+Test RMSE: 81.41
+R2 Gap: 2.60%
+
+Classification Model:
+Model Used: RandomForestClassifier
+Training Classification Accuracy: 95.30%
+Testing Classification Accuracy: 92.83%
+Classification Accuracy Gap: 2.46%
+
+Testing Precision: 92.80%
+Testing Recall: 92.83%
+Testing F1 Score: 92.81%
+
+Regression Configuration Used:
+- ExtraTreesRegressor used for sales value prediction
+- Log target transformation used for skewed retail sales values
+- Product-level and transaction-level features used
+- Model depth and leaf size controlled for better generalization
+
+Classification Configuration Used:
+- RandomForestClassifier used for Low, Medium, High sales class prediction
+- Separate classification feature set used
+- Train-test split evaluation used for generalization check
+- Precision, recall, F1-score and confusion matrix used for evaluation
+Confusion Matrix:
+Labels: ['Low', 'Medium', 'High']
+[[1388   54    0]
+ [  63  777   27]
+ [   0   37  180]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         Low       0.96      0.96      0.96      1442
+      Medium       0.90      0.90      0.90       867
+        High       0.87      0.83      0.85       217
+
+    accuracy                           0.93      2526
+   macro avg       0.91      0.90      0.90      2526
+weighted avg       0.93      0.93      0.93      2526
+
+
+Saved Models:
+Regression Model: ml\sales_model.pkl
+Classification Model: ml\sales_classifier.pkl
+Metrics File: ml\model_metrics.txt

@@ -1,0 +1,15 @@
+Smart Retail Assistant helps store managers predict product demand, detect unusual sales patterns, and answer retail business questions.
+
+Demand forecasting is used to estimate future sales based on product, price, discount, region, and date features.
+
+Anomaly detection identifies unusual sales behavior such as sudden spikes, sudden drops, or abnormal demand.
+
+Discounts can increase sales, but very high discounts may reduce profit margins.
+
+Fast-moving products such as milk, bread, rice, soap, and shampoo require regular inventory monitoring.
+
+Retail managers should track key metrics such as total sales, product-wise demand, regional performance, discount impact, and anomaly alerts.
+
+If predicted demand is high, inventory should be increased to avoid stockouts.
+
+If anomaly status is detected, the manager should verify pricing, stock availability, promotion activity, or data entry errors.
